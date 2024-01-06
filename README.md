@@ -5,7 +5,7 @@ This is a test requested by Workana for an available position at SoftExpert. The
 
 Certainly! Here's the translated content in English for your README.md:
 
-```markdown
+
 # Laravel Project (Back-end) and React.js (Front-end)
 
 This project consists of a separate back-end (Laravel) and front-end (React.js) application.
@@ -16,13 +16,13 @@ Before getting started, make sure you have the following requirements installed:
 
 ### Back-end (Laravel - PHP)
 
-- PHP (version X.X.X or higher)
+- PHP (version 7.4 or higher)
 - Composer (PHP dependency manager)
-- MySQL or PostgreSQL (or any other database supported by Laravel)
+- PostgreSQL 
 
 ### Front-end (React.js - Node.js)
 
-- Node.js and npm (or yarn)
+- Node.js and ```npm``` (or ```yarn``````)
 
 ## Configuration and Execution
 
@@ -82,4 +82,3 @@ Contributions are welcome! If you wish to contribute to this project, follow the
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
