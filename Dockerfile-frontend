@@ -1,0 +1,17 @@
+# Dockerfile para o frontend React (imagem Debian)
+FROM node:alpine AS frontend
+
+# Defina o diretório de trabalho para o aplicativo React
+WORKDIR /usr/src/app/front
+
+# Copie o código do frontend React para o contêiner
+COPY ./front /usr/src/app/front
+
+# Instale as dependências do Node.js para o aplicativo React
+RUN npm install
+
+# Construa os arquivos de produção para o aplicativo React
+RUN npm run build
+
+# Comando para iniciar o servidor ou executar a aplicação React (pode variar dependendo do seu projeto)
+CMD ["npm", "start"]

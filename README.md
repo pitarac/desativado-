@@ -1,84 +1,54 @@
-# Workana-SoftExpert
-This is a test requested by Workana for an available position at SoftExpert. The position is for a Full Stack PHP Developer. I will be developing the project using a widely popular PHP framework, Laravel, and I am still studying whether to implement Vue or React on the frontend.
+Certainly! Here is the updated README.md file with the project name changed to "workana-softExpert" and translated into English:
 
 
+# Workana-SoftExpert - Laravel Backend and React Frontend
 
-Certainly! Here's the translated content in English for your README.md:
+This project combines a Laravel backend and a React frontend within a Docker container.
+
+## Checking Docker Version
+
+Before starting, make sure Docker is installed on your machine and obtain information about the current version.
+
+### Check Docker Version
+
+To check the installed Docker version, execute the following command in the terminal:
+
+```bash
+docker --version
+```
+
+This command will display the current version of Docker installed on your machine.
+
+## Project Directory Structure:
+
+```
+workana-softExpert/
+├── backEnd/
+│   ├── (Laravel files)
+└── front/
+    ├── (React files)
+```
+
+## Docker Configuration
+
+Ensure that Docker is installed on your machine before getting started.
+
+### Building the Docker Image
+
+To build the Docker image from the Dockerfile, execute the following command in the project's root directory:
+
+```bash
+docker build -t workana-softexpert:latest .
+```
+
+### Running the Docker Container
+
+After building the image, run the Docker container by mapping port 80 of the container to port 8080 of your local host:
+
+```bash
+docker run -p 8080:80 workana-softexpert:latest
+```
+
+This will make your application available locally at: [http://localhost:8080](http://localhost:8080)
 
 
-# Laravel Project (Back-end) and React.js (Front-end)
-
-This project consists of a separate back-end (Laravel) and front-end (React.js) application.
-
-## Requirements
-
-Before getting started, make sure you have the following requirements installed:
-
-### Back-end (Laravel - PHP)
-
-- PHP (version 7.4 or higher)
-- Composer (PHP dependency manager)
-- PostgreSQL 
-
-### Front-end (React.js - Node.js)
-
-- Node.js and ```npm``` (or ```yarn``````)
-
-## Configuration and Execution
-
-### Back-end (Laravel)
-
-1. Clone this repository.
-2. Navigate to the Laravel project folder.
-3. Install PHP dependencies using Composer:
-   ```
-   composer install
-   ```
-4. Copy the `.env.example` file to `.env` and configure it with your database information.
-5. Generate the Laravel application key:
-   ```
-   php artisan key:generate
-   ```
-6. Run migrations to create tables in the database:
-   ```
-   php artisan migrate
-   ```
-7. Start the local PHP server:
-   ```
-   php artisan serve
-   ```
-
-### Front-end (React.js)
-
-1. Navigate to the React project folder.
-2. Install Node.js dependencies using npm:
-   ```
-   npm install
-   ```
-   or
-   ```
-   yarn
-   ```
-3. Develop the React front-end normally.
-4. To start the local development server:
-   ```
-   npm start
-   ```
-   or
-   ```
-   yarn start
-   ```
-
-## Contribution
-
-Contributions are welcome! If you wish to contribute to this project, follow these steps:
-
-1. Fork the repository.
-2. Create a branch with the new feature (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/new-feature`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

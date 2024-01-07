@@ -4,6 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Console\Commands\SetupPostgreSQL; // Importe o comando personalizado
 
 class Kernel extends ConsoleKernel
 {
@@ -22,6 +23,11 @@ class Kernel extends ConsoleKernel
     {
         $this->load(__DIR__.'/Commands');
 
+        // Adicione a referência ao seu comando personalizado aqui
+        $this->commands([
+            SetupPostgreSQL::class,
+        ]);
+        
         require base_path('routes/console.php');
     }
 }
